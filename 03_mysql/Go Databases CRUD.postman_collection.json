@@ -1,0 +1,332 @@
+{
+	"info": {
+		"_postman_id": "31b9c7f7-bccf-4f7a-8fef-a9d0d2c11be7",
+		"name": "Go Databases CRUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000"
+				}
+			},
+			"response": [
+				{
+					"name": "Index",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 04 Mar 2021 06:05:31 GMT"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"ID\": 1,\n        \"Title\": \"The First Article\",\n        \"Content\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo imperdiet accumsan. Duis et eros luctus, aliquet libero quis, dapibus ante. Nunc maximus luctus felis vel elementum. Suspendisse maximus, neque a gravida vulputate, velit est sollicitudin dolor, sit amet mollis magna libero ut leo. Nulla commodo lectus semper felis fringilla, vel dignissim leo dapibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer consectetur interdum elementum. Morbi scelerisque fermentum massa eu lacinia. Nunc eu fermentum arcu, eu aliquam ipsum.\"\n    },\n    {\n        \"ID\": 2,\n        \"Title\": \"Lipsum\",\n        \"Content\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo imperdiet accumsan. Duis et eros luctus, aliquet libero quis, dapibus ante. Nunc maximus luctus felis vel elementum. Suspendisse maximus, neque a gravida vulputate, velit est sollicitudin dolor, sit amet mollis magna libero ut leo. Nulla commodo lectus semper felis fringilla, vel dignissim leo dapibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer consectetur interdum elementum. Morbi scelerisque fermentum massa eu lacinia. Nunc eu fermentum arcu, eu aliquam ipsum.\"\n    },\n    {\n        \"ID\": 3,\n        \"Title\": \"Golang Tutorial\",\n        \"Content\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo imperdiet accumsan. Duis et eros luctus, aliquet libero quis, dapibus ante. Nunc maximus luctus felis vel elementum. Suspendisse maximus, neque a gravida vulputate, velit est sollicitudin dolor, sit amet mollis magna libero ut leo. Nulla commodo lectus semper felis fringilla, vel dignissim leo dapibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer consectetur interdum elementum. Morbi scelerisque fermentum massa eu lacinia. Nunc eu fermentum arcu, eu aliquam ipsum.\"\n    },\n    {\n        \"ID\": 4,\n        \"Title\": \"MySQL Tutorial\",\n        \"Content\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo imperdiet accumsan. Duis et eros luctus, aliquet libero quis, dapibus ante. Nunc maximus luctus felis vel elementum. Suspendisse maximus, neque a gravida vulputate, velit est sollicitudin dolor, sit amet mollis magna libero ut leo. Nulla commodo lectus semper felis fringilla, vel dignissim leo dapibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer consectetur interdum elementum. Morbi scelerisque fermentum massa eu lacinia. Nunc eu fermentum arcu, eu aliquam ipsum.\"\n    },\n    {\n        \"ID\": 5,\n        \"Title\": \"This Is Really Really Really Long Title\",\n        \"Content\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo imperdiet accumsan. Duis et eros luctus, aliquet libero quis, dapibus ante. Nunc maximus luctus felis vel elementum. Suspendisse maximus, neque a gravida vulputate, velit est sollicitudin dolor, sit amet mollis magna libero ut leo. Nulla commodo lectus semper felis fringilla, vel dignissim leo dapibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer consectetur interdum elementum. Morbi scelerisque fermentum massa eu lacinia. Nunc eu fermentum arcu, eu aliquam ipsum.\"\n    },\n    {\n        \"ID\": 6,\n        \"Title\": \"This is <b>Title</b>\",\n        \"Content\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo imperdiet accumsan. Duis et eros luctus, aliquet libero quis, dapibus ante. Nunc maximus luctus felis vel elementum. Suspendisse maximus, neque a gravida vulputate, velit est sollicitudin dolor, sit amet mollis magna libero ut leo. Nulla commodo lectus semper felis fringilla, vel dignissim leo dapibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer consectetur interdum elementum. Morbi scelerisque fermentum massa eu lacinia. Nunc eu fermentum arcu, eu aliquam ipsum.\"\n    },\n    {\n        \"ID\": 7,\n        \"Title\": \"a\",\n        \"Content\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo imperdiet accumsan. Duis et eros luctus, aliquet libero quis, dapibus ante. Nunc maximus luctus felis vel elementum. Suspendisse maximus, neque a gravida vulputate, velit est sollicitudin dolor, sit amet mollis magna libero ut leo. Nulla commodo lectus semper felis fringilla, vel dignissim leo dapibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer consectetur interdum elementum. Morbi scelerisque fermentum massa eu lacinia. Nunc eu fermentum arcu, eu aliquam ipsum.\"\n    },\n    {\n        \"ID\": 8,\n        \"Title\": \"#234\",\n        \"Content\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo imperdiet accumsan. Duis et eros luctus, aliquet libero quis, dapibus ante. Nunc maximus luctus felis vel elementum. Suspendisse maximus, neque a gravida vulputate, velit est sollicitudin dolor, sit amet mollis magna libero ut leo. Nulla commodo lectus semper felis fringilla, vel dignissim leo dapibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer consectetur interdum elementum. Morbi scelerisque fermentum massa eu lacinia. Nunc eu fermentum arcu, eu aliquam ipsum.\"\n    },\n    {\n        \"ID\": 9,\n        \"Title\": \";SHOW TABLES;\",\n        \"Content\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo imperdiet accumsan. Duis et eros luctus, aliquet libero quis, dapibus ante. Nunc maximus luctus felis vel elementum. Suspendisse maximus, neque a gravida vulputate, velit est sollicitudin dolor, sit amet mollis magna libero ut leo. Nulla commodo lectus semper felis fringilla, vel dignissim leo dapibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer consectetur interdum elementum. Morbi scelerisque fermentum massa eu lacinia. Nunc eu fermentum arcu, eu aliquam ipsum.\"\n    },\n    {\n        \"ID\": 10,\n        \"Title\": \"^_^t\",\n        \"Content\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo imperdiet accumsan. Duis et eros luctus, aliquet libero quis, dapibus ante. Nunc maximus luctus felis vel elementum. Suspendisse maximus, neque a gravida vulputate, velit est sollicitudin dolor, sit amet mollis magna libero ut leo. Nulla commodo lectus semper felis fringilla, vel dignissim leo dapibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer consectetur interdum elementum. Morbi scelerisque fermentum massa eu lacinia. Nunc eu fermentum arcu, eu aliquam ipsum.\"\n    },\n    {\n        \"ID\": 11,\n        \"Title\": \"Test Title\",\n        \"Content\": \"Test Content\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Title\": \"This is a title.\",\n    \"Content\": \"This is a content.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000"
+				}
+			},
+			"response": [
+				{
+					"name": "Create",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Title\": \"This is a title.\",\n    \"Content\": \"This is a content.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 04 Mar 2021 06:05:53 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "67"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"ID\": 13,\n    \"Title\": \"This is a title.\",\n    \"Content\": \"This is a content.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Read",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/13",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"13"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Read",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/13",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"13"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 04 Mar 2021 06:06:12 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "67"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"ID\": 13,\n    \"Title\": \"This is a title.\",\n    \"Content\": \"This is a content.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Title\": \"Updated Title\",\n    \"Content\": \"Updated Content\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/13",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"13"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Title\": \"Updated Title\",\n    \"Content\": \"Updated Content\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/13",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"13"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 04 Mar 2021 06:06:28 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "61"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"ID\": 13,\n    \"Title\": \"Updated Title\",\n    \"Content\": \"Updated Content\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Title\": \"Updated Title\",\n    \"Content\": \"Updated Content\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/13",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"13"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Title\": \"Updated Title\",\n    \"Content\": \"Updated Content\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/13",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"13"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 04 Mar 2021 06:06:51 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}
